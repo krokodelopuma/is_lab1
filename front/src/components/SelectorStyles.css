@@ -1,0 +1,107 @@
+/* Стили для селекторов координат и людей */
+.coordinates-selector,
+.person-selector {
+  margin-bottom: 20px;
+}
+
+.mode-selector {
+  margin-bottom: 15px;
+}
+
+.mode-selector label {
+  display: inline-block;
+  margin-right: 20px;
+  cursor: pointer;
+}
+
+.mode-selector input[type="radio"] {
+  margin-right: 5px;
+}
+
+.existing-selector {
+  margin-bottom: 15px;
+}
+
+.existing-selector select {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+.new-coordinates,
+.new-person {
+  border: 1px solid #e0e0e0;
+  padding: 15px;
+  border-radius: 4px;
+  background-color: #f9f9f9;
+}
+
+.new-coordinates .form-group,
+.new-person .form-group {
+  margin-bottom: 10px;
+}
+
+.new-coordinates .form-group label,
+.new-person .form-group label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: 500;
+}
+
+.new-coordinates .form-group input,
+.new-person .form-group input,
+.new-person .form-group select {
+  width: 100%;
+  padding: 6px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  font-size: 14px;
+}
+
+.location-fields {
+  margin-top: 15px;
+  padding-top: 15px;
+  border-top: 1px solid #ddd;
+}
+
+.location-fields h4 {
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.location-fields .form-group {
+  display: inline-block;
+  width: 30%;
+  margin-right: 3%;
+}
+
+.location-fields .form-group:last-child {
+  margin-right: 0;
+}
+
+.loading {
+  color: #666;
+  font-style: italic;
+  margin-top: 5px;
+}
+
+.required {
+  color: red;
+  margin-left: 3px;
+}
+
+/* Адаптивность для мобильных устройств */
+@media (max-width: 768px) {
+  .location-fields .form-group {
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+  
+  .mode-selector label {
+    display: block;
+    margin-bottom: 10px;
+  }
+}
